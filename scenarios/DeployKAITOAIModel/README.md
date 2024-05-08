@@ -53,7 +53,7 @@ Results:
 ## Create an Azure Resource Group
 
 ```bash
-az group create --name $MY_RESOURCE_GROUP_NAME --location $REGION --debug
+az group create --name $MY_RESOURCE_GROUP_NAME --location $REGION
 ```
 
 Results:
