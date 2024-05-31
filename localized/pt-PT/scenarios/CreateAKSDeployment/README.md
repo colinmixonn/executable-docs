@@ -359,7 +359,7 @@ Você pode validar se o aplicativo está em execução visitando o endereço IP 
 Obtenha a URL do aplicativo usando os seguintes comandos:
 
 ```azurecli-interactive
-runtime="5 minute"
+runtime="5 minutes"
 endtime=$(date -ud "$runtime" +%s)
 while [[ $(date -u +%s) -le $endtime ]]
 do
@@ -382,7 +382,7 @@ curl $IP_ADDRESS
 
 Resultados:
 <!-- expected_similarity=0.3 -->
-```JSON
+```HTML
 <!doctype html>
 <html lang="">
    <head>
@@ -401,7 +401,7 @@ Resultados:
 </html>
 ```
 
-```JSON
+```output
 echo "You can now visit your web server at $IP_ADDRESS"
 ```
 

@@ -359,7 +359,7 @@ Du kan kontrollera att programmet körs genom att besöka den offentliga IP-adre
 Hämta program-URL:en med hjälp av följande kommandon:
 
 ```azurecli-interactive
-runtime="5 minute"
+runtime="5 minutes"
 endtime=$(date -ud "$runtime" +%s)
 while [[ $(date -u +%s) -le $endtime ]]
 do
@@ -382,7 +382,7 @@ curl $IP_ADDRESS
 
 Resultat:
 <!-- expected_similarity=0.3 -->
-```JSON
+```HTML
 <!doctype html>
 <html lang="">
    <head>
@@ -401,7 +401,7 @@ Resultat:
 </html>
 ```
 
-```JSON
+```output
 echo "You can now visit your web server at $IP_ADDRESS"
 ```
 

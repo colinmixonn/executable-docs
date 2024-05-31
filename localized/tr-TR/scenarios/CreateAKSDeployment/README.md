@@ -359,7 +359,7 @@ Genel IP adresini veya uygulama URL'sini ziyaret ederek uygulamanın çalıştı
 Aşağıdaki komutları kullanarak uygulama URL'sini alın:
 
 ```azurecli-interactive
-runtime="5 minute"
+runtime="5 minutes"
 endtime=$(date -ud "$runtime" +%s)
 while [[ $(date -u +%s) -le $endtime ]]
 do
@@ -382,7 +382,7 @@ curl $IP_ADDRESS
 
 Sonuçlar:
 <!-- expected_similarity=0.3 -->
-```JSON
+```HTML
 <!doctype html>
 <html lang="">
    <head>
@@ -401,7 +401,7 @@ Sonuçlar:
 </html>
 ```
 
-```JSON
+```output
 echo "You can now visit your web server at $IP_ADDRESS"
 ```
 
